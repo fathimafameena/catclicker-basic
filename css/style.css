@@ -1,0 +1,11 @@
+#cat{
+	
+	border:solid 10px blue;
+	border-radius:50%;
+	box-shadow:-10px -10px 10px 10px grey;
+}
+#text{
+
+	display: flex;
+	flex-wrap: wrap;
+}
