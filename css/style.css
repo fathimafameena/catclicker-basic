@@ -1,8 +1,15 @@
-#cat{
-	
-	border:solid 10px blue;
+#cat,#cat1{
+	width:400px;
+	border:solid 10px black;
 	border-radius:50%;
 	box-shadow:-10px -10px 10px 10px grey;
+}
+#catpics,#catnames{
+display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
 }
 #text{
 
