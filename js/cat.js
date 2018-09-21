@@ -28,19 +28,41 @@ img.setAttribute("alt", "cats");
 img.id="imgcat"+j;
 console.log(img.id);
 imageelement.appendChild(img);
-
+var span=document.createElement("span");
+var nodespan = document.createTextNode("     ");
+span.appendChild(nodespan);
+imageelement.appendChild(span);
 var text=document.createElement("input");
 text.type=text;
 text.id="cat"+j;
-text.value=0;
+text.setAttribute('value',0);
 console.log(text.id);
 imageelement.appendChild(text);
 
-var imgid=document.getElementById("j");
-var textid=document.getElementById(text.id);
-
 
 
 }
 }
+}
+
+
+console.log("inside k loop");
+var imgid=[];
+var textid=[];
+var click=0;
+for(var k=0;k<catimages.length;k++){
+ imgid[k]=(document.getElementById("imgcat"+k));
+ textid[k]=(document.getElementById("cat"+k));
+console.log("inside event"+imgid[3]+textid[3]);
+console.log(textid[k].value);
+
+imgid[k].addEventListener('click',(function(testvalue)
+{
+	return function(){
+
+	alert(testvalue);
+var newval=testvalue.getAttribute("value");
+testvalue.setAttribute('value',newval+1);
+};
+})(textid[k]));
 }

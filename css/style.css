@@ -1,4 +1,4 @@
-#cat,#cat1{
+#cat{
 	width:400px;
 	border:solid 10px black;
 	border-radius:50%;
@@ -15,4 +15,9 @@ display: flex;
 
 	display: flex;
 	flex-wrap: wrap;
+}
+body{
+
+	background-color:grey;
+
 }
