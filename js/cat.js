@@ -64,5 +64,5 @@ imgid[k].addEventListener('click',(function(testvalue)
 var newval=testvalue.getAttribute("value");
 testvalue.setAttribute('value',newval+1);
 };
-})(textid[k]));
+})(textid[k]));//closure method usage 
 }
